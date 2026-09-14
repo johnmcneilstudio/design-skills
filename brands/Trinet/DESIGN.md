@@ -1,276 +1,751 @@
-# TriNet — Style Reference
-> navy field, orange wing, everything pointing up and to the right
+# TriNet — Design Reference
 
-**Theme:** light
+> Clear, human and restrained. Typography establishes hierarchy; photography supplies warmth; orange provides emphasis.
 
-TriNet runs on a corporate-editorial logic: white and deep navy grounds, one hot orange that does nearly all of the chromatic work, and a wide secondary palette held in reserve for charts, bands and containers. Display type is Centra No. 2 ExtraBold, all caps, stacked into tight blocks and frequently split across two colors inside a single headline (white line, orange line). The signature device is the wing — the angular mark nested in the final "t" of the wordmark, extracted and scaled up as a graphic motif that always points up and to the right and never rotates, repeats or bleeds. Depth is flat: no gradients, no soft elevation, just hard 16/24/48px zero-blur color offsets and full-bleed color bands. Corners are close to square (0–8px), so the geometry stays crisp against documentary photography that supplies all the warmth.
+**Status:** Current JMS working direction  
+**Last reviewed:** September 14, 2026  
+**Default theme:** Light
+
+This reference defines the current design direction for TriNet campaign pages, landing pages, presentations and editorial materials developed with JMS.
+
+It builds on the established TriNet identity while simplifying its expression. Layouts should feel light, direct and editorial rather than heavily branded or decorated. Use strong typography, generous whitespace, candid photography and restrained color.
+
+Where this reference differs from older TriNet materials, follow this document for new JMS work. Existing corporate templates and production pages may continue to use legacy treatments when consistency with those materials is required.
+
+---
+
+## Principles
+
+### Clear before clever
+
+The communication should be understandable before the design calls attention to itself. Each section should communicate one primary idea.
+
+### Human and precise
+
+Lead with language people recognize. Follow it with concise supporting copy that clearly explains the business value.
+
+### Restraint creates emphasis
+
+Not every element needs a color, icon, card or graphic device. Typography, spacing and photography should do most of the work.
+
+### Editorial, not templated
+
+Layouts should feel intentionally composed rather than assembled from repeated marketing modules.
+
+### Real people, real situations
+
+Photography should show believable people in genuine working environments. Avoid generic corporate stock conventions.
+
+---
 
 ## Colors
 
-The Figma library publishes these as variables under `brand/primary/*` (orange, navy), `brand/neutral/*` (black, dark-gray, medium-gray) and `neutral/white`; the website exposes the same values as Tailwind tokens (`trinet-orange`, `trinet-navy`, `dark-gray`, `medium-gray`, `light-gray`, `gray-tint`).
+The core TriNet palette remains intact, but its use is more restrained than in older brand materials.
 
 ### Primary
 
 | Name | Value | Role |
-|------|-------|------|
-| TriNet Orange | `#FD5000` | The brand's single hot accent — wing motif, headline emphasis lines, CTA fills, logo wing. PMS Orange 021C / C0M74Y100K0 |
-| TriNet Navy | `#0B0134` | Default text color, dark section grounds, inverted cards, logo wordmark. PMS 276C / C94M93Y0K79 |
-| Web Orange | `#D64100` | The darkened orange the website ships as `trinet-orange` — used wherever orange must carry small text or UI and meet AA contrast |
+|---|---|---|
+| TriNet Orange | `#FD5000` | Primary brand accent, CTA fills, campaign emphasis and logo wing |
+| TriNet Navy | `#0B0134` | Primary text, dark surfaces and reversed sections |
+| Web Orange | `#D64100` | Accessible orange for small text and interactive UI |
+| White | `#FFFFFF` | Primary page canvas and reversed text |
+
+Orange should provide emphasis, not dominate every composition. Large orange fields should be used intentionally rather than as a default section treatment.
 
 ### Neutral
 
 | Name | Value | Role |
-|------|-------|------|
-| White | `#FFFFFF` | Page canvas, reversed type, card surfaces |
-| Black | `#000000` | Black-only logo output, maximum-contrast type. PMS Process Black |
-| Dark Gray | `#54565A` | Secondary body text, meta labels. PMS Cool Gray 11 |
-| Medium Gray | `#797D82` | Tertiary text, captions, footer meta. PMS Cool Gray 8 |
-| Light Gray | `#DFE1DF` | Hairlines, table borders, quiet panel fills, offset-shadow color. PMS Cool Gray 1 |
-| Gray Tint | `#F5F6F5` | Subtle section wash, one step off white |
+|---|---|---|
+| Black | `#000000` | Maximum-contrast text and black-only output |
+| Dark Gray | `#54565A` | Secondary body copy and metadata |
+| Medium Gray | `#797D82` | Captions and tertiary information |
+| Light Gray | `#DFE1DF` | Borders, separators and quiet panels |
+| Gray Tint | `#F5F6F5` | Light section background |
+| White | `#FFFFFF` | Default canvas and card surface |
+
+Light neutral backgrounds should carry most pages. Alternate between white and subtle gray only when a section change needs clarification.
 
 ### Secondary
 
-A shared set of 21 colors in three tonal rows — dark, mid, light. Used for section bands, L-shaped containers, chart series and illustration, never as a replacement for TriNet Orange as the action color.
+The broader TriNet palette remains available for:
 
-| Name | Value | Row | Role |
-|------|-------|-----|------|
-| Dark Orange | `#8F3011` | dark | Deep band grounds, chart series. PMS 174C |
-| Gold | `#CB7A00` | dark | Band grounds, chart series. PMS 145C |
-| Dark Violet | `#48086F` | dark | Band grounds, event/webinar graphics. PMS 2617C |
-| Deep Teal | `#00434A` | dark | Band grounds, report covers. PMS 3165C |
-| Dark Magenta | `#6B003D` | dark | Band grounds, campaign graphics. PMS 216C |
-| Red | `#C0143C` | dark | Band grounds, chart series. PMS 193C |
-| Blue | `#1C02D8` | mid | Saturated fills, chart series. PMS 286C |
-| Yellow | `#FFC701` | mid | Highlight numerals, emphasis fills. PMS 116C |
-| Violet | `#7F3ED6` | mid | Fills, chart series. PMS 266C |
-| Green | `#00B142` | mid | Fills, chart series. PMS 354C |
-| Magenta | `#DB0661` | mid | Fills, chart series. PMS 2040C |
-| Light Orange | `#FF9E79` | light | Light washes, dark-mode chart tints. PMS 163C |
-| Light Blue | `#57CCF6` | light | Light washes, dark-mode chart tints. PMS 305C |
-| Light Yellow | `#F9E285` | light | Light washes. PMS 2002C |
-| Light Violet | `#B593FF` | light | Light washes. PMS 2645C |
-| Turquoise | `#45D8B4` | light | Light washes, success-adjacent graphics. PMS 3385C |
-| Pink | `#FF8DCB` | light | Light washes. PMS 2037C |
+- Data visualization
+- Approved campaign systems
+- Social content
+- Event materials
+- Functional categorization
 
-### Web-only functional colors
+It should not become the default landing-page palette.
 
-Present in the site stylesheet, not in the printed palette.
+| Name | Value |
+|---|---|
+| Dark Orange | `#8F3011` |
+| Gold | `#CB7A00` |
+| Dark Violet | `#48086F` |
+| Deep Teal | `#00434A` |
+| Dark Magenta | `#6B003D` |
+| Red | `#C0143C` |
+| Blue | `#1C02D8` |
+| Yellow | `#FFC701` |
+| Violet | `#7F3ED6` |
+| Green | `#00B142` |
+| Magenta | `#DB0661` |
+| Light Orange | `#FF9E79` |
+| Light Blue | `#57CCF6` |
+| Light Yellow | `#F9E285` |
+| Light Violet | `#B593FF` |
+| Turquoise | `#45D8B4` |
+| Pink | `#FF8DCB` |
+
+When multiple secondary colors are used, establish a clear reason for the color system. Do not apply colors simply to create visual variety.
+
+### Functional colors
 
 | Name | Value | Role |
-|------|-------|------|
-| Note Violet | `#F2ECFB` | Callout/note panel fill, promotional messaging background, offset-shadow color |
-| Input Focus | `#0A62E6` | Focus ring on links and form controls |
+|---|---|---|
+| Input Focus | `#0A62E6` | Focus rings and selected controls |
 | Input Error | `#E01021` | Form validation |
 | Error Red | `#B91C1C` | Error text |
-| Medium Blue | `#0070E0` | Interactive blue in UI chrome |
-| Dark Green | `#008531` · `#018130` | Success states; the second value is the AA-compliant variant |
+| Medium Blue | `#0070E0` | Interactive UI |
+| Dark Green | `#008531` | Success states |
 | Disabled Gray | `#3B3B3B` | Disabled controls |
-| Checkout Purple | `#661CC8` | Checkout flow accent |
-| Checkout tints | `#F3F6FF` · `#F2FBF5` · `#FFF2F2` | Pale info / success / error panel fills |
 
 ### Tints
 
-Every primary and secondary color has approved 20 / 40 / 60 / 80 / 100% tints for diagrams, charts and illustrations, in digital and print. Tints are accents only and must never be the predominant color in a piece; text over any tint still has to clear contrast requirements.
+Approved tints may be used for charts, diagrams and subtle information panels. A tint should not become the predominant color of a page unless the specific campaign system calls for it.
+
+Text placed over any tint must meet accessibility contrast requirements.
+
+---
 
 ## Typography
 
-### Centra No. 2 — the brand typeface
-An approachable contemporary geometric sans, close in structure to Futura and Avenir but drawn for screens. Hierarchy is carried by weight, not by width or a second family: **ExtraBold** all caps for display and OOH headlines with tight letterspacing and leading, **Bold** for headlines and subheads, **Medium** for subheads and nav, **Book** for body. The website also ships a Light (300) cut. The distinguishing move is the two-color headline — one clause in white, the next in orange, inside a single tightly leaded all-caps block.
-- **Substitute:** web fallback stack is Open Sans then system sans-serif; for geometric fidelity, Poppins, Jost, or Museo Sans
-- **Weights:** 300 (web only), 400 Book, 500 Medium, 700 Bold, 800 ExtraBold
-- **Sizes:** 12, 14, 16, 18, 24, 36, 40, 48, 56, 64, 72, 80, 100px
-- **Line height:** 0.90–1.10 on display, 1.10–1.13 on headings, ~1.44 on body (18/26)
-- **Letter spacing:** −0.01em on body, −2px / −3% on large display; OOH headlines set noticeably tighter than default
-- **Case:** display and OOH headlines are all caps; headlines, subheads and body are sentence case
+## Avenir Next LT Pro — Current working typeface
 
-### Avenir Next LT Pro — the system typeface
-For Microsoft applications (PowerPoint, Word, Outlook), where Centra No. 2 is unavailable. Bold for headline and subhead, Regular for body. Fall back to Arial Regular or Bold only; script, casual and serif faces are excluded.
-- **Substitute:** Arial
-- **Weights:** Light, Medium (Regular), Bold
-- **Deck sizes:** 18pt subhead, 15/18pt body and level-one bullets, 12/15pt levels two and below
+Avenir Next LT Pro is the primary typeface for current JMS campaign, landing-page, presentation and editorial work.
 
-### Whitepaper hierarchy — Centra No. 2
-A separate, tighter set of published text styles (`Centra No2/Whitepaper/*`) governs long-form documents. It reads quieter than the marketing voice: nothing is set in ExtraBold, headlines are sentence case rather than all caps, and the only all-caps element is an 11px orange kicker. Color carries the hierarchy alongside size — navy for heads, black for the lead paragraph, dark gray for running body, medium gray for captions.
+Hierarchy should come from scale, weight, spacing and composition. Avoid creating a separate style for every semantic heading level.
 
-| Style | Family / Weight | Size / Line | Tracking | Case | Color |
-|-------|-----------------|-------------|----------|------|-------|
-| Kicker / Eyebrow | Bold (700) | 11 / 14 | +1.4px | uppercase | TriNet Orange `#FD5000` |
-| H1 — Section head | Bold (700) | 34 / 40 | 0 | sentence | TriNet Navy `#0B0134` |
-| H2 — Subsection | Medium (500) | 22 / 28 | 0 | sentence | TriNet Navy `#0B0134` |
-| H3 — Minor head | Bold (700) | 16 / 22 | 0 | sentence | Dark Gray `#54565A` |
-| Lead paragraph | Book (400) | 17 / 28 | 0 | sentence | Black `#000000` |
-| Body | Book (400) | 14 / 23 | 0 | sentence | Dark Gray `#54565A` |
-| Caption / Footnote | Medium (500) | 11 / 16 | 0 | sentence | Medium Gray `#797D82` |
-| Pull quote | Medium Italic (500) | 20 / 28 | 0 | sentence | TriNet Navy `#0B0134` |
+### Weights
 
-The lead paragraph style is for the opening paragraph only — subsequent paragraphs drop to Body. Note one inconsistency in the source: the H3 row is annotated "Medium" but the published style is Bold; the table above follows the published style.
+- Regular for body copy
+- Medium for labels and supporting headings
+- Demi or Bold for headings and calls to action
+- Italic for selective editorial emphasis
+- Heavy weights should be used sparingly
 
-### Type Scale — Web
-From the production website; sizes in px. Marketing pages run considerably larger than the whitepaper hierarchy above — 18px body against 14px, and a hero step that reaches 100px.
+### Case
 
-| Role | Size | Line Height | Notes |
-|------|------|-------------|-------|
-| caption | 12 | 18 | |
-| body-sm | 14 | 20 | footnotes, meta |
-| body-base | 16 | 24 | |
-| body | 18 | 26 | site default |
-| subheading | 24 | 32 | h5/h6 sit at 24 |
-| heading-sm | 36 | 40 | h3 at 36 |
-| heading | 40 | 44 | h2 at 40 |
-| heading-lg | 48 | 52 | h1 mobile |
-| display | 56 | 60 | h1 at ≥768px |
-| display-lg | 64 | 68 | h1 at ≥1280px |
-| display-xl | 72 | 80 | hero |
-| display-2xl | 80 | 88 | hero |
-| display-3xl | 100 | 110 | largest web step |
+- Display headlines: sentence case
+- Section headings: sentence case
+- Card headings: sentence case
+- Body copy: sentence case
+- Buttons: sentence case
+- Metadata and functional labels: sentence case by default
 
-The responsive hero step ramps 36/45 → 48/55 → 60/66 → 72/80 → 80/88 → 100/110 across breakpoints.
+All-caps headlines belong to older TriNet expression and should not be introduced into new JMS layouts unless explicitly requested.
 
-## Spacing & Layout
+### Web type scale
 
-**Base unit:** 4px
+| Style | Size / Line | Primary use |
+|---|---:|---|
+| `TriNet/Display — Large` | 64 / 68 | Large landing-page hero |
+| `TriNet/Display` | 48 / 52 | Standard hero and editorial title |
+| `TriNet/Heading — Large` | 40 / 44 | Major section heading |
+| `TriNet/Heading` | 24 / 32 | Card and subsection heading |
+| `TriNet/Body — Large` | 18 / 26 | Lead and prominent supporting copy |
+| `TriNet/Body` | 16 / 24 | Standard body copy |
+| `TriNet/Label` | 16 / 24 | Small headings and utility labels |
+| `TriNet/Button` | 18 / 26 | Primary and secondary actions |
+| `TriNet/Meta` | 14 / 20 | Captions, metadata and supporting links |
 
-**Density:** comfortable
+The core hierarchy is:
 
-- **Page max-width:** 1280px (container widens to 1536px at the 2xl breakpoint)
-- **Gutters:** 16px → 32px (≥640) → 48px (≥768) → 64px (≥1024) → 80px (≥1280) → 96px (≥1536)
-- **Nav height:** 116px desktop, 58px mobile; scroll padding accounts for nav + banner + secondary nav
-- **Grid:** 12 columns, with 1/2/3/4 and 10-column variants in use
-- **Section gap:** not specified in the source material — the stylesheet is utility-driven with no fixed section rhythm
-- **Card padding:** not specified in the source material
+**64 → 48 → 40 → 24 → 18 → 16 → 14**
 
-### Border Radius
+Do not reintroduce separate 32px H2, 18px H3, 16px small H3 or multiple 14px H4 styles. HTML semantics and visual styles do not need a one-to-one relationship.
 
-The system is effectively square. There is no large-radius card language.
+### Responsive display scale
 
-- **default:** 4px
-- **sm:** 2px
-- **md:** 6px
-- **lg:** 8px
-- **pill:** 9999px (tags, small controls, avatars)
-- **focus ring:** 5px
+Display type should reduce intentionally rather than through arbitrary intermediate sizes.
+
+Recommended behavior:
+
+- Large desktop: 64 / 68
+- Desktop and tablet: 48 / 52
+- Small tablet and mobile: approximately 40 / 44 or 36 / 40
+- Long mobile headlines may reduce further when necessary
+
+Headlines may break across two or three lines. Do not force a one-line headline at the expense of legibility or composition.
+
+### Campaign emphasis
+
+The italicized and straight-underlined word **really** is a campaign-specific treatment for:
+
+**What do you _really_ need from HR?**
+
+Rules:
+
+- Use sentence case.
+- Capitalize “What.”
+- Italicize only the intended emphasis word.
+- Use a clean, straight underline.
+- Keep the underline visually controlled.
+- Do not add arrows, sparkles or additional emphasis marks.
+
+Do not turn this treatment into a universal TriNet headline style.
+
+## Centra No. 2 — Existing corporate materials
+
+Centra No. 2 appears throughout existing TriNet web and brand materials. Retain it when matching an established production page, template or corporate asset that already uses it.
+
+Do not mix Centra No. 2 and Avenir Next casually within a single experience.
+
+Legacy treatments associated with Centra include:
+
+- ExtraBold all-caps display type
+- Tight stacked headline blocks
+- Two-color orange and white headlines
+- Large corporate campaign typography
+
+These treatments should not automatically carry into new JMS work.
+
+## Microsoft Office
+
+Use Avenir Next LT Pro when it is installed on the recipient’s system.
+
+Fallback:
+
+1. Avenir Next LT Pro
+2. Arial
+
+Do not use script, casual or serif substitutions.
+
+For editable PowerPoint files:
+
+- Turn off font embedding.
+- Allow the file to use the locally installed Avenir Next LT Pro family.
+- Confirm the recipient has the required fonts.
+- Use solid backgrounds.
+- Avoid unnecessary diagonal patterns, orange rules and decorative flourishes.
+
+## Whitepapers and datasheets
+
+Long-form materials should be quieter than campaign pages.
+
+| Style | Weight | Suggested size / line | Color |
+|---|---|---:|---|
+| Document title | Bold | 30–34 / 36–40 pt | TriNet Navy |
+| Section heading | Bold | 20–22 / 26–28 pt | TriNet Navy |
+| Subsection heading | Demi/Bold | 14–16 / 19–22 pt | Dark Gray |
+| Lead paragraph | Regular | 12–13 / 18–20 pt | Black |
+| Body | Regular | 10.5–11 / 15–17 pt | Dark Gray |
+| Caption | Regular/Medium | 9–10 / 13–15 pt | Medium Gray |
+| Pull quote | Medium Italic | 16–20 / 22–28 pt | TriNet Navy |
+
+Primary printed body copy should generally not fall below 9.5pt. Always print a physical proof before approving a long-form document.
+
+---
+
+## Spacing and layout
+
+**Base unit:** 4px  
+**Density:** Comfortable  
+**Default alignment:** Left  
+**Grid:** 12 columns
+
+### Page width
+
+- Standard content container: approximately 1280px
+- Wide layouts may extend to approximately 1536px
+- Reading-width copy should remain substantially narrower
+
+### Gutters
+
+Recommended responsive progression:
+
+- Mobile: 16–24px
+- Small tablet: 32px
+- Tablet: 40–48px
+- Desktop: 64–80px
+- Large desktop: up to 96px
+
+### Section rhythm
+
+Use generous spacing to distinguish blades before adding borders, color blocks or graphics.
+
+Typical section spacing:
+
+- Mobile: 64–80px
+- Tablet: 80–112px
+- Desktop: 112–160px
+
+These values are guidelines rather than mandatory component dimensions.
+
+### Cards
+
+Cards should only be introduced when they clarify grouping, comparison or interaction.
+
+Recommended card behavior:
+
+- Light or white surface
+- 24–40px internal padding
+- Minimal border or no border
+- Little or no shadow
+- Clear typographic hierarchy
+- Consistent content alignment
+
+Do not place every paragraph inside a card.
+
+---
+
+## Border radius
+
+Geometry should remain crisp and controlled.
+
+- Default: 4px
+- Small: 2px
+- Medium: 6px
+- Large: 8px
+- Pill: reserved for tags, chips and compact controls
+- Focus ring: 5px when required by the component
+
+Avoid large-radius consumer-app cards unless a product requirement establishes that pattern.
+
+---
 
 ## Components
 
-### TriNet Wordmark
-**Role:** Primary brand signature
+## TriNet wordmark
 
-Set in all lowercase with the wing mark embedded in the final "t"; the last "t" and the wing together read as a subtle shield. Four approved versions: full-color (navy + orange), reversed-out (white + orange), all white, all black. Minimum height 24px digital / 12pt print. Clear space on all sides is at least one wing-mark width. In running copy the company is written camel case as "TriNet," regardless of the lowercase mark.
+Use the approved TriNet wordmark artwork.
 
-### Shield Symbol
-**Role:** Shorthand mark for small contexts
+Approved versions:
 
-The wing joined to the final "t". Reserved for app icons, social avatars and similar constrained spaces — the wordmark is used whenever space permits. Minimum height 20px digital / 8pt print, with one wing-mark of clear space.
+- Full color
+- Reversed white and orange
+- All white
+- All black
 
-### Product Wordmark Lockup
-**Role:** Company logo + product name
+In running copy, write the company name as **TriNet**.
 
-Available stacked (preferred) and horizontal (when vertical space is tight). Proportions and spacing are fixed and must not be altered or distorted. Clear space is two wing-marks on all sides. Minimum heights: horizontal 25px, stacked 40px.
+Do not redraw, approximate or rebuild the logo.
 
-### Wing Motif
-**Role:** The signature graphic device
+## Hero
 
-An enlarged, flat-color wing sized against the height of the format, typically 1/2, 1/3, 1/4, 1/5 or 1/6 of a side; leg thickness commonly 1/3 or 1/6 of the format dimension. Placed toward the right, pointing up and forward, either flush to the edge or inset by a margin equal to the width of its legs. TriNet Orange is the recommended fill.
+A hero should communicate the page’s primary idea quickly.
 
-### Wing-Derived L Container
-**Role:** Framing device for messaging and long-form content
+Typical structure:
 
-The motif adapted into L shapes whose legs may differ in weight and length, used to create square or rectangular containers for copy — including an inverted L that boxes a headline block. Fill with TriNet Navy or a secondary color; TriNet Orange is only permitted when the shape keeps the true wing proportions, though orange may fill the negative space a wing reverses out of.
+1. Headline
+2. Concise supporting line
+3. Primary action, form or required next step
+4. One intentional image when photography adds meaning
 
-### Display Headline Block
-**Role:** Hero, OOH and campaign headline
+For campaign pages, the hero may be only an image, headline and subhead.
 
-Centra No. 2 ExtraBold, all caps, broken across short stacked lines with tight leading and letterspacing. Emphasis is chromatic rather than typographic: the opening clause in white, the payoff clause in TriNet Orange, on a navy ground. Paired with a Bold subhead (for example a three-word service list) and the wordmark-plus-tagline lockup.
+Avoid:
 
-### Animated CTA Link
-**Role:** Primary inline call to action
+- Multiple competing CTAs
+- Decorative eyebrow labels
+- Icon clusters
+- Floating graphic ornaments
+- Long introductory paragraphs
+- Several messages competing above the fold
 
-Inherits its text color, carries a 1px bottom border, and draws a second underline from 0% to 100% width over 0.3s ease-in-out on hover and focus — 2px standard, 3px in the heavier variant. Variants pin the underline permanently in white or navy. Focus renders a 1px `#0A62E6` ring at 5px radius, offset around the link.
+## Human headline and precise support
 
-### Headline Highlight Marks
-**Role:** Hand-drawn emphasis on a headline span
+The headline should express the human idea. The supporting line should explain it clearly and concretely.
 
-Two decorations applied to a span inside a headline: a rough brush underline (0.175em tall, clipped to an irregular path) and an enclosing hand-drawn circle (115% wide, 1.35em tall). Both fill with the accent color, animate in over 0.3s after a 0.3s delay, and render statically at full width under `prefers-reduced-motion`.
+Do not make both lines equally emotional or equally technical.
 
-### Hard Offset Shadow Block
-**Role:** Flat depth for cards, images and panels
+Example:
 
-A zero-blur, zero-spread offset in a solid brand color at 16px, 24px or 48px on both axes, available in any palette color and any opacity step — the system's stand-in for elevation. A 18×16px variant appears at large breakpoints in deep teal and light blue.
+**What do you really need from HR?**
 
-### Body Copy Block
-**Role:** Long-form text
+Every business is different. So is what it needs from HR.
 
-18/26 Centra No. 2 Book in TriNet Navy. Unordered lists replace bullets with a 0.25em round dot in the current color; ordered lists use generated counters. Bold spans and inline accents pick up an accent color from a theme variable, and links inherit color with the animated underline treatment.
+## Recognition prompts
 
-### Pull Quote
-**Role:** Emphasis quotation in long-form documents
+Questions such as:
 
-Centra No. 2 Medium Italic 20/28 in TriNet Navy, preceded by a 3px-wide, 40px-tall TriNet Orange rule with 24px between the rule and the text. No quotation panel, background fill or oversized quote glyph — the orange hairline is the entire device.
+- I’m hiring and growing fast.
+- My HR is taking too much of my time.
+- I’m worried about what I don’t know.
+- I need better benefits to compete.
+- My business has gotten too complex to handle HR myself.
 
-### Section Color Band
-**Role:** Full-bleed section ground
+are recognition prompts, not navigation elements.
 
-A flat band in white, Gray Tint, TriNet Navy, TriNet Orange or a secondary color, with type reversed to white or set in navy according to the contrast guidance. Sections are separated by color change rather than by rules or shadows.
+Their job is to help visitors recognize their situation before moving into the form. They should not appear to branch into different pages or product categories unless the experience genuinely supports that behavior.
 
-### Data Visualization Set
-**Role:** Charts in light and dark mode
+## Content cards
 
-Multi-color series drawn from the secondary palette, with light-mode combinations checked against light grounds and mid-to-dark hues shifted lighter for dark mode. Tints in 20% steps supply series variation within a single hue.
+Use cards for:
 
-### Swag Pattern
-**Role:** Special-application surface pattern
+- Distinct business situations
+- Comparisons
+- Short expert perspectives
+- Related resources
+- Clearly grouped capabilities
 
-The wing duplicated on a grid at decreasing scales (1, 0.85, 0.65, 0.5, 0.35) to create upward movement. Spacing between motifs may be opened up to admit copy. Special applications only, and never combined with imagery.
+A card should contain one primary idea. Do not decorate cards with icons merely to differentiate them.
 
-## Do's and Don'ts
+## Form and conversion panel
+
+The form is the destination of the page, not an administrative afterthought.
+
+Keep the surrounding design quiet:
+
+- Clear form title
+- Short explanation
+- Visible labels
+- Accessible focus and error states
+- Minimal adjacent messaging
+- No unnecessary illustrations
+
+## Proof and statistics
+
+Use large, factual proof points with concise labels.
+
+Recommended heading:
+
+**TriNet at a glance**
+
+Avoid inventing an additional campaign-style headline when the section’s function is factual proof.
+
+## Awards and recognition
+
+Use actual approved award artwork supplied or published by TriNet. Do not approximate award logos.
+
+Keep award strips compact and separate from company statistics when possible.
+
+## Calls to action
+
+Primary CTA:
+
+- Orange fill
+- Clear sentence-case label
+- Strong contrast
+- No decorative arrow unless the component system requires one
+
+Secondary CTA:
+
+- Text link or restrained outline
+- Clear hover and focus state
+
+## Icons
+
+Use icons only when they perform a functional or informational role.
+
+Approved uses include:
+
+- Product UI
+- Functional controls
+- Established diagrams
+- Checklists
+- Existing TriNet icon-library applications
+
+For simplified editorial materials, existing icons may be converted to one color to better integrate with the restrained system.
+
+Do not introduce icons simply because a section has three or four columns.
+
+## Check marks
+
+Check marks are appropriate for concise benefits, requirements and included features. Keep them small, consistent and subordinate to the typography.
+
+---
+
+## Do’s and don’ts
 
 ### Do
-- Set display and OOH headlines in Centra No. 2 ExtraBold, all caps, with tight letterspacing and leading; Bold for subheads, Medium for nav and labels, Book for body.
-- Split long headlines across two colors — white for the setup, TriNet Orange for the payoff — inside one tightly leaded block.
-- Point the wing motif up and to the right, toward the right side of the layout, at roughly 1/2 to 1/6 of the format's side.
-- Fill the wing motif itself with TriNet Orange, and fill derived L-shaped containers with TriNet Navy or a secondary color.
-- Keep one wing-mark of clear space around the wordmark and symbol, two around product wordmarks; more is better.
-- Use the reversed-out wordmark on navy, the white wordmark on TriNet Orange and on black, and the full-color wordmark on white and on light, high-contrast areas of photography.
-- Use `#D64100` in place of `#FD5000` on the web wherever orange carries small text or UI, and check every orange/navy/white pairing against the AA chart.
-- Create depth with 16/24/48px zero-blur color offsets and flat color bands.
-- Keep radii between 0 and 8px, reserving the pill shape for tags and small controls.
-- Write "TriNet" camel case in all copy even though the wordmark is lowercase.
 
-### Don't
-- Do not fill a stretched, rotated or otherwise non-wing-proportioned L shape with TriNet Orange — use TriNet Navy or a secondary color.
-- Do not point the wing down, rotate it, reverse the layout's orientation, frame content with multiple wings, run it full-bleed, or repeat it as a pattern outside of swag.
-- Do not place the wing too low on the page or size it so small that it reads as an icon.
-- Do not place the white logo on light secondary colors, or the full-color wordmark on midtone or visually complex photography — use the reversed-out version, or add a subtle dark overlay.
-- Do not set the wordmark inside a line of copy as a substitute for the word "TriNet."
-- Do not apply transparencies, effects or color overlays to photography, and do not crop so tightly that the real-world context is lost.
-- Do not use staged or stock-feeling imagery; docu-style authenticity is the standard.
-- Do not let a tint become the predominant color in a piece — tints are accents for diagrams, charts and illustrations.
-- Do not carry dark chart colors into light-mode presentations, or mid-to-dark hues into dark mode without shifting them lighter.
-- Do not substitute script, casual or serif faces in Office documents — Avenir Next LT Pro, or Arial as the only fallback.
-- Do not introduce gradients or soft drop shadows as a depth language.
+- Use Avenir Next LT Pro for current JMS work.
+- Set headlines in sentence case.
+- Establish clear jumps in the simplified type hierarchy.
+- Use white and light neutral backgrounds as the default.
+- Use orange as an intentional accent.
+- Let typography and spacing carry the design.
+- Use candid, context-rich photography.
+- Show real-feeling owners, employees and teams.
+- Allow images to become large when they provide the emotional center.
+- Use a 12-column grid.
+- Keep components crisp and restrained.
+- Use existing TriNet icons when they add information.
+- Keep proof sections direct and factual.
+- Test body copy at actual printed size.
+- Check color contrast and keyboard focus states.
+
+### Don’t
+
+- Do not default to all-caps display headlines.
+- Do not use large extracted wing graphics as a routine layout device.
+- Do not build layouts from repeated L-shaped containers.
+- Do not add orange dashes, arrows, sparkles or decorative marks.
+- Do not add icons to every card.
+- Do not turn every section into a large color field.
+- Do not use hard offset shadows as the default depth language.
+- Do not rely on decorative gradients.
+- Do not introduce large rounded cards without a functional reason.
+- Do not use generic stock-feeling business imagery.
+- Do not crop away all evidence of the working environment.
+- Do not create award-logo approximations.
+- Do not treat recognition questions as navigation when they lead only to a form.
+- Do not make print body copy too small to read comfortably.
+- Do not embed Avenir Next in PowerPoint when editability is required.
+
+---
 
 ## Elevation
 
-Effectively flat. Depth comes from the hard offset shadow — a solid brand color at 16px, 24px or 48px on both axes with no blur and no spread — and from color contrast between bands. Soft shadows exist only as minor UI chrome: a 2px/5px 10%-black shade on sticky headers and dropdown edges, and a 2px horizontal 10%-black shade marking the frozen first column of a scrollable table.
+The current system is predominantly flat.
+
+Use separation in this order:
+
+1. Whitespace
+2. Background change
+3. Fine border
+4. Very subtle shadow, only when necessary
+
+Avoid large, colored, zero-blur offset shadows in current JMS work. Those belong to the earlier expression and may be retained only when matching an established legacy asset.
+
+---
 
 ## Surfaces
 
-- **Page** (`#FFFFFF`) — default canvas for web and print
-- **Gray Tint** (`#F5F6F5`) — quiet section wash, one step off white
-- **Light Gray** (`#DFE1DF`) — panels, table fills, hairlines, offset-shadow color
-- **Note Violet** (`#F2ECFB`) — callout and promotional-message panels
-- **Inverted** (`#0B0134`) — navy sections, ads and covers with reversed-out type
-- **Accent Band** (`#FD5000`) — orange full-bleed sections; type on orange is white
-- **Secondary Band** (secondary palette) — deep violet, teal, magenta and red grounds for campaign and event graphics
+### Page
+
+`#FFFFFF`
+
+The standard canvas for campaign pages, landing pages and editorial materials.
+
+### Quiet section
+
+`#F5F6F5`
+
+Used to distinguish a section without creating a strong visual interruption.
+
+### Panel
+
+White or a restrained light gray with an optional fine border.
+
+### Inverted
+
+`#0B0134`
+
+Use selectively for a meaningful pause, proof section or final CTA. Avoid alternating every section between light and dark.
+
+### Orange
+
+`#FD5000`
+
+Use for focused campaign moments and calls to action. It should feel intentional when it occupies a large area.
+
+### Secondary color
+
+Reserved for approved campaign systems, social executions, charts and event applications.
+
+---
 
 ## Imagery
 
-Docu-style photography is the emotional core of the identity: real people in real working contexts, bold color, dramatic light and contrast, and deliberate diversity of race, ethnicity, age and gender. Images run full-bleed or are cropped by wing and L geometry, with the wordmark reversed out in white and the orange wing anchored at the top right. Headline type often overlaps the lower portion of the image. Effects, transparencies and color overlays are prohibited, as are tight crops that strip out context and staged setups that read as stock. Beyond photography, the only graphic vocabulary is the wing motif, its L-shaped derivatives, and occasional loose hand-drawn marks (arrows, sparkles, brush underlines) in orange or white.
+Photography is the emotional counterweight to the restrained design system.
+
+### Direction
+
+Use:
+
+- Candid, real-feeling moments
+- Small-business owners and teams
+- Genuine working environments
+- Natural or direct high-flash lighting
+- Strong contrast and believable color
+- People engaged with one another or their work
+- Deliberate representation across race, age, gender and profession
+- Horizontal images that support responsive web crops
+- Portraits that retain environmental context
+
+Not every person needs to be using a computer. Look for conversations, gestures, movement, preparation and the ordinary details of running a business.
+
+### Avoid
+
+- Generic corporate stock photography
+- Staged handshakes
+- Forced group poses
+- Artificially perfect offices
+- People staring at laptops without a meaningful story
+- Excessive retouching
+- Heavy color overlays
+- Tight crops that remove the business context
+- Distorted or stretched source images
+
+### Composition
+
+Photography may:
+
+- Run full width
+- Occupy one side of a split layout
+- Interrupt a structured page as an editorial seam
+- Replace one card in an otherwise typographic grid
+- Appear as a large portrait beside proof or supporting content
+
+Photography should not be added merely to fill an empty module.
+
+### Asset provenance
+
+Record whether each image is:
+
+- Supplied by TriNet
+- Licensed stock
+- Commissioned
+- AI-generated
+- Edited from a supplied source
+
+Do not describe an AI-generated asset as stock photography. Retain the original source and approval history for client-delivered assets.
+
+### Web image preparation
+
+Keep the original PNG or highest-quality source file as the master.
+
+For implementation:
+
+- Export WebP and, where supported, AVIF derivatives.
+- Generate multiple responsive sizes.
+- Avoid repeatedly recompressing already compressed files.
+- Preserve a high-quality master outside the web build.
+
+Recommended master dimensions:
+
+| Use | Suggested master width |
+|---|---:|
+| Full-width hero | 2000–2400px |
+| Split hero or editorial feature | 1600–2000px |
+| Large card | 1200–1600px |
+| Standard card or thumbnail | 800–1200px |
+
+Dimensions are only one measure of quality. Inspect sharpness, focus, compression artifacts and the effective crop at the intended display size.
+
+---
 
 ## Layout
 
-Full-bleed sections stacked as flat color bands — white, gray tint, navy, orange or a secondary color — with content constrained to a 1280px container on a 12-column grid and gutters that step from 16px to 96px across breakpoints. The navigation bar is a fixed 116px on desktop, 58px on mobile. Compositions are anchored top-left for type and top-right for the wing, which frequently doubles as the structural divider: at a 2:1 aspect it splits the layout into halves, and in square formats it reverses out a container for the headline. Copy blocks are left-aligned and short — headline, two-to-four-word subhead, single CTA. Cards and image blocks sit flat with a hard color offset rather than a shadow. Print and OOH follow the same logic at larger scale: one stacked all-caps headline, one subhead, the wordmark-and-tagline lockup, and the wing in the upper right.
+Layouts should feel composed, editorial and easy to scan.
 
-## Similar Brands
+### Default behavior
 
-Not covered in the source material — the playbook, the Figma working file and the site stylesheet contain no competitive or adjacent-brand references.
+- Light page canvas
+- Twelve-column structure
+- Strong left alignment
+- Generous margins
+- Large typographic moments
+- One primary idea per blade
+- Photography used as an intentional interruption
+- Restrained transitions between sections
+
+### Landing pages
+
+A typical landing page may contain:
+
+1. Simple hero
+2. Supporting context or campaign introduction
+3. Recognition prompts or primary value proposition
+4. Form or conversion point
+5. Supporting capabilities
+6. Proof
+7. Awards or reassurance
+8. Final CTA
+
+This is not a required template. Remove any section that does not contribute to understanding or conversion.
+
+### Long-form and gated resources
+
+Keep gated-resource pages especially simple:
+
+1. Resource title
+2. Concise value proposition
+3. Image of the document or one relevant photograph
+4. Form
+5. One compact proof or supporting-content section
+
+Do not rebuild a full corporate website beneath every gated form.
+
+### Cards and grids
+
+Introduce a grid only when the content contains comparable items. Varying the width or placement of one image can prevent a page from feeling mechanically modular.
+
+### Decorative graphics
+
+No graphic flourish should be added solely because a layout feels empty. First reconsider:
+
+- Scale
+- Alignment
+- Whitespace
+- Image choice
+- Copy length
+- Section rhythm
+
+---
+
+## Legacy and approved exceptions
+
+The following remain part of historic or broader TriNet expression but are not defaults for current JMS work:
+
+- Centra No. 2 ExtraBold display typography
+- All-caps stacked headlines
+- White-and-orange split headlines
+- Oversized extracted wing motifs
+- Wing-derived L containers
+- Hard colored offset shadows
+- Large secondary-color section bands
+- Repeated wing patterns
+- Loose arrows, sparkles and brush decorations
+
+Use these only when:
+
+- Matching an existing campaign
+- Extending an established production experience
+- Required by a TriNet-owned template
+- Specifically requested and approved
+
+The official logo and its embedded wing remain core brand assets.
+
+---
+
+## Similar design references
+
+The current direction is closer to restrained editorial and modern professional-services design than to highly decorated corporate campaign systems.
+
+Useful qualities to reference:
+
+- Strong editorial typography
+- Clean gated-resource pages
+- Generous white space
+- Bold, candid photography
+- Clear conversion paths
+- Minimal functional iconography
+- Simple factual proof sections
+
+References should inform composition and restraint, not introduce another brand’s visual devices.
+
+---
+
+## Final review checklist
+
+Before delivery, confirm:
+
+- Avenir Next LT Pro is used consistently.
+- Headlines are sentence case.
+- The simplified type scale is followed.
+- Orange is restrained and purposeful.
+- Decorative arrows, dashes and flourishes have been removed.
+- Icons serve a clear function.
+- Photography feels candid and context-rich.
+- Image provenance is documented.
+- Web images have responsive WebP or AVIF versions.
+- Print body copy has been physically proofed.
+- Forms meet accessibility requirements.
+- Award marks are official assets.
+- Recognition prompts do not imply false navigation.
+- PowerPoint fonts remain editable for the recipient.
+- The page communicates its central idea within a few seconds.
