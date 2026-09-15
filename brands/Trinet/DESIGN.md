@@ -10,7 +10,7 @@ This reference defines the current design direction for TriNet campaign pages, l
 
 It builds on the established TriNet identity while simplifying its expression. Layouts should feel light, direct and editorial rather than heavily branded or decorated. Use strong typography, generous whitespace, candid photography and restrained color.
 
-Where this reference differs from older TriNet materials, follow this document for new JMS work. Existing corporate templates and production pages may continue to use legacy treatments when consistency with those materials is required.
+This document guides new JMS concept and production work for TriNet. Official TriNet brand standards, approved templates and supplied assets take precedence where required. When extending an existing TriNet experience, retain its established treatments unless a new direction has been explicitly approved.
 
 ---
 
@@ -123,7 +123,7 @@ Text placed over any tint must meet accessibility contrast requirements.
 
 ## Avenir Next LT Pro — Current working typeface
 
-Avenir Next LT Pro is the primary typeface for current JMS campaign, landing-page, presentation and editorial work.
+Avenir Next LT Pro is the approved working typeface for current JMS campaign, landing-page, presentation and editorial work. It must be obtained through an approved TriNet or JMS source and installed by the recipient; it is not included in the supplied `Fonts (1).zip` package reviewed with this reference.
 
 Hierarchy should come from scale, weight, spacing and composition. Avoid creating a separate style for every semantic heading level.
 
@@ -198,7 +198,7 @@ Do not turn this treatment into a universal TriNet headline style.
 
 ## Centra No. 2 — Existing corporate materials
 
-Centra No. 2 appears throughout existing TriNet web and brand materials. Retain it when matching an established production page, template or corporate asset that already uses it.
+Centra No. 2 appears throughout existing TriNet web and brand materials. The supplied `Fonts (1).zip` package contains the Centra No. 2 family in Hairline, Thin, Light, Book, Medium, Bold, ExtraBold and Black weights, with corresponding italics where supplied. Retain it when matching an established production page, template or corporate asset that already uses it.
 
 Do not mix Centra No. 2 and Avenir Next casually within a single experience.
 
@@ -321,12 +321,12 @@ Avoid large-radius consumer-app cards unless a product requirement establishes t
 
 Use the approved TriNet wordmark artwork.
 
-Approved versions:
+Supplied and verified versions:
 
-- Full color
-- Reversed white and orange
-- All white
-- All black
+- Navy wordmark with orange wing for light surfaces (`Theme=Light.png`)
+- White wordmark with orange wing for dark surfaces (`Theme=Dark.png`)
+
+Use other variants, including all-white or all-black, only when official artwork has been supplied or verified through TriNet’s brand library.
 
 In running copy, write the company name as **TriNet**.
 
