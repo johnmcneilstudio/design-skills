@@ -3,7 +3,7 @@
 > Clear, human and restrained. Typography establishes hierarchy; photography supplies warmth; orange provides emphasis.
 
 **Status:** Current JMS working direction  
-**Last reviewed:** September 14, 2026  
+**Last reviewed:** September 16, 2026  
 **Default theme:** Light
 
 This reference defines the current design direction for TriNet campaign pages, landing pages, presentations and editorial materials developed with JMS.
@@ -46,7 +46,8 @@ The core TriNet palette remains intact, but its use is more restrained than in o
 
 | Name | Value | Role |
 |---|---|---|
-| TriNet Orange | `#FD5000` | Primary brand accent, CTA fills, campaign emphasis and logo wing |
+| TriNet Orange | `#FD5000` | Primary brand accent, CTA fills and campaign emphasis |
+| Logo Orange | `#E14700` | Orange used in the supplied TriNet wordmark artwork; do not recolor the logo |
 | TriNet Navy | `#0B0134` | Primary text, dark surfaces and reversed sections |
 | Web Orange | `#D64100` | Accessible orange for small text and interactive UI |
 | White | `#FFFFFF` | Primary page canvas and reversed text |
@@ -121,19 +122,19 @@ Text placed over any tint must meet accessibility contrast requirements.
 
 ## Typography
 
-## Avenir Next LT Pro — Current working typeface
+### Centra No. 2 — Primary typeface
 
-Avenir Next LT Pro is the approved working typeface for current JMS campaign, landing-page, presentation and editorial work. It must be obtained through an approved TriNet or JMS source and installed by the recipient; it is not included in the supplied `Fonts (1).zip` package reviewed with this reference.
+Centra No. 2 is the primary typeface for current JMS campaign, landing-page, presentation and editorial work for TriNet. The supplied `Fonts (1).zip` package contains the Centra No. 2 family in Hairline, Thin, Light, Book, Medium, Bold, ExtraBold and Black weights, with corresponding italics where supplied.
 
-Hierarchy should come from scale, weight, spacing and composition. Avoid creating a separate style for every semantic heading level.
+Hierarchy should come primarily from scale, spacing and composition rather than increasingly heavy weights. Avoid creating a separate visual style for every semantic heading level.
 
 ### Weights
 
-- Regular for body copy
-- Medium for labels and supporting headings
-- Demi or Bold for headings and calls to action
-- Italic for selective editorial emphasis
-- Heavy weights should be used sparingly
+- Medium for all display headlines, section headings, card headings, labels and buttons
+- Book for body copy, supporting copy, captions and metadata
+- Medium Italic for selective editorial emphasis
+- Bold for occasional statistics or compact emphasis
+- ExtraBold and Black should be avoided in the core system
 
 ### Case
 
@@ -148,17 +149,17 @@ All-caps headlines belong to older TriNet expression and should not be introduce
 
 ### Web type scale
 
-| Style | Size / Line | Primary use |
-|---|---:|---|
-| `TriNet/Display — Large` | 64 / 68 | Large landing-page hero |
-| `TriNet/Display` | 48 / 52 | Standard hero and editorial title |
-| `TriNet/Heading — Large` | 40 / 44 | Major section heading |
-| `TriNet/Heading` | 24 / 32 | Card and subsection heading |
-| `TriNet/Body — Large` | 18 / 26 | Lead and prominent supporting copy |
-| `TriNet/Body` | 16 / 24 | Standard body copy |
-| `TriNet/Label` | 16 / 24 | Small headings and utility labels |
-| `TriNet/Button` | 18 / 26 | Primary and secondary actions |
-| `TriNet/Meta` | 14 / 20 | Captions, metadata and supporting links |
+| Style | Size / Line | Weight | Primary use |
+|---|---:|---|---|
+| `TriNet/Display — Large` | 64 / 68 | Medium | Large landing-page hero |
+| `TriNet/Display` | 48 / 52 | Medium | Standard hero and editorial title |
+| `TriNet/Heading — Large` | 40 / 44 | Medium | Major section heading |
+| `TriNet/Heading` | 24 / 32 | Medium | Card and subsection heading |
+| `TriNet/Body — Large` | 18 / 26 | Book | Lead and prominent supporting copy |
+| `TriNet/Body` | 16 / 24 | Book | Standard body copy |
+| `TriNet/Label` | 16 / 24 | Medium | Small headings and utility labels |
+| `TriNet/Button` | 18 / 26 | Medium | Primary and secondary actions |
+| `TriNet/Meta` | 14 / 20 | Book | Captions, metadata and supporting links |
 
 The core hierarchy is:
 
@@ -196,52 +197,54 @@ Rules:
 
 Do not turn this treatment into a universal TriNet headline style.
 
-## Centra No. 2 — Existing corporate materials
+### Font fallbacks
 
-Centra No. 2 appears throughout existing TriNet web and brand materials. The supplied `Fonts (1).zip` package contains the Centra No. 2 family in Hairline, Thin, Light, Book, Medium, Bold, ExtraBold and Black weights, with corresponding italics where supplied. Retain it when matching an established production page, template or corporate asset that already uses it.
+Avenir Next LT Pro is the preferred fallback when Centra No. 2 is unavailable. It should not replace Centra No. 2 in primary brand applications when the supplied Centra family can be used.
 
-Do not mix Centra No. 2 and Avenir Next casually within a single experience.
+Recommended digital font stack:
 
-Legacy treatments associated with Centra include:
+```css
+font-family: "Centra No2", "Avenir Next LT Pro", Arial, sans-serif;
+```
 
-- ExtraBold all-caps display type
-- Tight stacked headline blocks
-- Two-color orange and white headlines
-- Large corporate campaign typography
+Fallback order:
 
-These treatments should not automatically carry into new JMS work.
+1. Centra No. 2
+2. Avenir Next LT Pro
+3. Arial
+4. Generic sans-serif
 
-## Microsoft Office
+Do not refer to the fallback generically as Avenir, Avenir Next or Avenir Next LT. Use the exact family name **Avenir Next LT Pro**.
 
-Use Avenir Next LT Pro when it is installed on the recipient’s system.
+Do not mix Centra No. 2 and Avenir Next LT Pro intentionally within a single experience. Avenir Next LT Pro exists to preserve the overall character when Centra No. 2 cannot be loaded or installed.
 
-Fallback:
+### Microsoft Office
 
-1. Avenir Next LT Pro
-2. Arial
+Use Centra No. 2 when it is installed on the recipient’s system. If Centra No. 2 is unavailable, use Avenir Next LT Pro. Use Arial only when neither preferred family is available.
 
 Do not use script, casual or serif substitutions.
 
 For editable PowerPoint files:
 
 - Turn off font embedding.
-- Allow the file to use the locally installed Avenir Next LT Pro family.
-- Confirm the recipient has the required fonts.
+- Allow the file to use the locally installed Centra No. 2 family.
+- Use Avenir Next LT Pro as the fallback when Centra No. 2 is unavailable.
+- Confirm the recipient has the intended font installed.
 - Use solid backgrounds.
 - Avoid unnecessary diagonal patterns, orange rules and decorative flourishes.
 
-## Whitepapers and datasheets
+### Whitepapers and datasheets
 
 Long-form materials should be quieter than campaign pages.
 
 | Style | Weight | Suggested size / line | Color |
 |---|---|---:|---|
-| Document title | Bold | 30–34 / 36–40 pt | TriNet Navy |
-| Section heading | Bold | 20–22 / 26–28 pt | TriNet Navy |
-| Subsection heading | Demi/Bold | 14–16 / 19–22 pt | Dark Gray |
-| Lead paragraph | Regular | 12–13 / 18–20 pt | Black |
-| Body | Regular | 10.5–11 / 15–17 pt | Dark Gray |
-| Caption | Regular/Medium | 9–10 / 13–15 pt | Medium Gray |
+| Document title | Medium | 30–34 / 36–40 pt | TriNet Navy |
+| Section heading | Medium | 20–22 / 26–28 pt | TriNet Navy |
+| Subsection heading | Medium | 14–16 / 19–22 pt | Dark Gray |
+| Lead paragraph | Book | 12–13 / 18–20 pt | Black |
+| Body | Book | 10.5–11 / 15–17 pt | Dark Gray |
+| Caption | Book/Medium | 9–10 / 13–15 pt | Medium Gray |
 | Pull quote | Medium Italic | 16–20 / 22–28 pt | TriNet Navy |
 
 Primary printed body copy should generally not fall below 9.5pt. Always print a physical proof before approving a long-form document.
@@ -461,7 +464,10 @@ Check marks are appropriate for concise benefits, requirements and included feat
 
 ### Do
 
-- Use Avenir Next LT Pro for current JMS work.
+- Use Centra No. 2 for current JMS work.
+- Set all headlines in Centra No. 2 Medium.
+- Use Centra No. 2 Book for body copy.
+- Use Avenir Next LT Pro as the preferred fallback when Centra No. 2 is unavailable.
 - Set headlines in sentence case.
 - Establish clear jumps in the simplified type hierarchy.
 - Use white and light neutral backgrounds as the default.
@@ -493,7 +499,7 @@ Check marks are appropriate for concise benefits, requirements and included feat
 - Do not create award-logo approximations.
 - Do not treat recognition questions as navigation when they lead only to a form.
 - Do not make print body copy too small to read comfortably.
-- Do not embed Avenir Next in PowerPoint when editability is required.
+- Do not embed Centra No. 2 or Avenir Next LT Pro in PowerPoint when editability is required.
 
 ---
 
@@ -541,6 +547,8 @@ Use selectively for a meaningful pause, proof section or final CTA. Avoid altern
 `#FD5000`
 
 Use for focused campaign moments and calls to action. It should feel intentional when it occupies a large area.
+
+The supplied wordmark uses its own embedded logo orange, `#E14700`. Always use the supplied logo artwork rather than recoloring or rebuilding it with the campaign orange.
 
 ### Secondary color
 
@@ -734,7 +742,10 @@ References should inform composition and restraint, not introduce another brand�
 
 Before delivery, confirm:
 
-- Avenir Next LT Pro is used consistently.
+- Centra No. 2 is used consistently as the primary typeface.
+- All headlines use Centra No. 2 Medium.
+- Body copy uses Centra No. 2 Book.
+- Avenir Next LT Pro is used only as the preferred fallback when Centra No. 2 is unavailable.
 - Headlines are sentence case.
 - The simplified type scale is followed.
 - Orange is restrained and purposeful.
