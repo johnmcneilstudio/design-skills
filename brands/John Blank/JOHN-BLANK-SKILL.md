@@ -31,7 +31,9 @@ These dimensions come from the John Blank room reference used in the ALSO experi
 
 These are the **canonical John Blank source images**. Use them every time the relevant view is being designed. Do not substitute a generic gallery, showroom, storefront, or AI-invented room.
 
-All canonical references live in [`assets/reference-images`](./assets/reference-images/).
+All canonical references live in [`assets/reference-images`](./assets/reference-images/). Read the [reference-image README](./assets/reference-images/README.md) for the full measurement record, architectural constraints, and unresolved area discrepancy. The front-room dimensions above are approximate; do not treat them as a verified survey.
+
+Preserve the documented three broad steps connecting the front room to the raised wood gallery, whose ceiling is approximately 12′ high. Do not flatten this level change. Preserve the single continuous storefront bay and the exterior elements documented in the README.
 
 ### Interior
 
@@ -45,13 +47,20 @@ All canonical references live in [`assets/reference-images`](./assets/reference-
 - [Linden Street — left view](./assets/reference-images/photo-linden-left.jpg) — Use for neighboring architecture, sidewalk context, and oblique views toward the left.
 - [Linden Street — right view](./assets/reference-images/photo-linden-right.jpg) — Use for neighboring architecture, sidewalk context, and oblique views toward the right.
 
+### Required image-input workflow
+
+- Visually inspect the relevant real photographs, choose one as the base view, and pass its actual image data to the image-editing or reference-image tool. Supply supporting photographs when the tool supports them. A filename, Markdown link, or text description alone does not mean the generator has received the image.
+- State which photographs were inspected and which were supplied to the generator. Do not claim either step occurred unless it did.
+- If the environment cannot retrieve or supply the photographs, ask Michael to attach the relevant images before making a site-specific render. If he chooses to proceed without them, label the result as a conceptual mood study with unverified architecture.
+- For a faithful visualization, edit the source photograph while retaining its camera position, perspective, openings, structural elements, room boundaries, and floor levels. Fit graphics, furnishings, lighting, and temporary installations within that space.
+
 ### How to use the references
 
 - For an **interior concept**, start from the linked interior photography and preserve its architecture, room proportions, ceiling structure, wall positions, steps, openings, and camera logic.
 - For an **exterior concept**, start from the linked storefront photography and preserve the real facade, opening, wall bounds, tree, utility pole, sidewalk relationship, and neighboring architecture.
 - A generated concept image is **not** an architectural reference. Always return to these source images when proportions drift.
 - Do not extend graphics, structures, displays, or architecture beyond physical surfaces that exist in the source photography.
-- If a client concept requires a different camera angle, infer it conservatively from the real room rather than inventing more space.
+- For a different camera angle, prefer a real photograph from that view. If none exists, use multiple source photographs and available drawings to constrain it, and label the new view as an inferred perspective with unverified geometry.
 
 ## 3. John Blank / JMS Spatial Style
 
@@ -125,7 +134,7 @@ When references disagree, use this order:
 Check:
 
 - Am I using the **14′4″ × 29′5″ × 14′** front-room reference?
-- Did I open the correct linked interior or exterior source image?
+- Did I visually inspect the correct interior or exterior source photographs and supply the selected base photo as an actual image input to the generator?
 - Am I preserving the actual proportions and architectural features?
 - Does this still clearly feel like John Blank?
 - Is the main move bold enough?
@@ -135,6 +144,12 @@ Check:
 - Have I accidentally used a previous generated concept as the architectural source?
 
 If any answer is wrong, correct it before generating.
+
+### After generating: verify the architecture
+
+Compare the output with the original base photograph and the reference-image README before delivery. Check storefront opening placement and proportions, apparent room depth, ceiling structure, floor levels and connecting steps when visible, and relevant exterior context. Check furniture and people against the documented scale. A cropped or obscured feature is not proof that it was preserved.
+
+If a major mismatch is visible, revise using the original photograph as the architectural reference. If the tool still cannot preserve the site, disclose the limitation and label the image conceptual rather than presenting it as a faithful John Blank visualization. Do not claim exact dimensional accuracy from a generated perspective.
 
 ## 7. Revision Rule
 
@@ -165,4 +180,4 @@ Michael can say:
 
 That means:
 
-Use the fixed John Blank measurements, open the linked real interior/exterior source images, preserve the true architecture, and apply the bold John Blank/JMS large-format spatial language defined above.
+Read the documented John Blank measurements and uncertainties, inspect and supply the relevant real photographs as image inputs, preserve and check the true architecture, and apply the bold John Blank/JMS large-format spatial language defined above.
