@@ -1,25 +1,25 @@
-# Logo assets
+# TriNet logo assets
 
-All files here are raster (PNG/GIF) exports from the current brand kit — **there is no SVG source in this set**. Treat these as the working files until vector masters are sourced; see "Gaps" below before using any of these at large scale.
+This folder contains the two approved raster wordmarks for light and dark themes. Both files are transparent PNGs at 766 × 221 px.
 
 ## Files
 
-| File | Size | What it is |
-|---|---|---|
-| `JMS_logo_cropped.png` | 1000×1001, transparent | The mark ("JM" in black + splash-gradient "S"), tight-cropped, near-square canvas. **Use this as the default mark file.** |
-| `JMS_logo_splatter.png` | 1651×1275, transparent | Same mark, larger canvas with more surrounding whitespace/splash spread. Use when you need extra breathing room baked into the file itself (e.g. dropping straight into a layout without building clearspace yourself). |
-| `JMS_logo_splatter_cropped.png` | 582×416, transparent | Same mark again, small and tightly cropped. Lowest resolution of the three — don't scale this one up. |
-| `JMS_wordmark_Black.png` | 1153×112, transparent | "John McNeil Studio" wordmark, black text — for light backgrounds. |
-| `JMS_wordmark_White.png` | 1153×112, transparent | Same wordmark, white text — for dark/midnight backgrounds (the default use case per `brand-elements.md`). |
-| `JMS_Signature_Look10_GIF_Signature.gif` | 450×310, transparent, 22 frames | Animated build-on of the mark — the splash assembles itself onto the black "JM" lockup. For video/motion or web-hero use. |
+| File | Use | Wordmark color | Accent |
+|---|---|---|---|
+| `Theme=Light.png` | Light or white backgrounds | TriNet Navy `#0B0134` | Logo Orange `#E14700` |
+| `Theme=Dark.png` | Dark or navy backgrounds | White `#FFFFFF` | Logo Orange `#E14700` |
 
-## What's NOT here (gaps to flag before this kit is treated as complete)
+The filenames describe the theme where each logo should be used, not the color of the wordmark.
 
-- **No monochrome mark.** The mark only exists in its full-color gradient form. If you need the mark in solid white or solid black (e.g. single-color print, embossing, watermark use), it doesn't exist yet and needs to be produced.
-- **No combined lockup file.** Mark and wordmark are separate assets — there's no single file with both pre-composed at a fixed relationship. If mark+wordmark need to appear together, that spacing is being built by hand each time rather than pulled from a locked asset, which is a real inconsistency risk.
-- **No vector (SVG/EPS) source.** Everything here is raster, and the largest version (`JMS_logo_splatter.png`) tops out at 1651px wide. Fine for web and slides; too low-res for large-format print (banners, environmental, step-and-repeat) — get the vector master from whoever holds the original files before any print use beyond letter/A4 scale.
-- **No favicon-specific export.** Nothing here is optimized/simplified for a 16–32px favicon context — `JMS_logo_cropped.png` will likely need a simplified redraw at that size, not just a scale-down.
+## Usage
 
-## Usage rules
+- Use `Theme=Light.png` on white and light neutral surfaces.
+- Use `Theme=Dark.png` on navy, black and other dark surfaces.
+- Preserve the original proportions and transparent background.
+- Do not stretch, crop, redraw or recolor the wordmark.
+- Do not rebuild the orange accent using the campaign orange. The supplied logo artwork uses `#E14700`.
+- Maintain enough clear space and contrast for the complete wordmark to remain legible.
 
-Clearspace, minimum size, and when to use mark vs. wordmark live in `../../brand/brand-elements.md` §5 — this file just documents what's physically in the folder.
+## File limitations
+
+These are raster PNG exports, not vector masters. They are appropriate for standard web, presentation and screen use, but should not be enlarged for large-format or high-resolution print production. Request an approved SVG, EPS or other vector master when vector output is required.
