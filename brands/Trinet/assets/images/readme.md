@@ -4,6 +4,12 @@ This folder contains selected references for the current JMS photography directi
 
 Images may be added, replaced or removed as the work evolves. Use the shared visual qualities below as the source of truth rather than relying on any individual filename or subject.
 
+## Current video stills
+
+The files in `social-video-stills/` are frame grabs from the TriNet video work reviewed for this project. They may be used in spec work to carry the attitude of that campaign: cinematic but immediate, close to the subject, active and grounded in real working environments.
+
+These are working frame grabs rather than touched-up final stills. Use them as references or temporary spec assets, and expect selected retouched imagery to be added later for broader use.
+
 ## Visual direction
 
 Photography should feel candid, immediate and grounded in the reality of running a business.
@@ -14,9 +20,9 @@ Look for:
 - People actively working, making, serving, preparing, moving or collaborating
 - Natural interaction rather than posed performance
 - Documentary or editorial framing with a sense of being inside the moment
+- Cinematic camera proximity, confident portraiture and environmental detail
 - Natural light or direct flash, with strong contrast and believable color
 - Imperfect, human details: movement, gestures, partial crops and occasional motion blur
-- Visible environmental context that helps explain the business
 - A broad mix of people, industries, ages and working situations
 
 Not every subject needs to be at a desk or using a computer. Shops, kitchens, studios, workshops, laboratories, offices, vehicles and service environments can all feel appropriate when the activity is specific and believable.
