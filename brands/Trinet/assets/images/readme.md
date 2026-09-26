@@ -10,6 +10,12 @@ The files in `social-video-stills/` are frame grabs from the TriNet video work r
 
 These are working frame grabs rather than touched-up final stills. Use them as references or temporary spec assets, and expect selected retouched imagery to be added later for broader use.
 
+## Social image rule
+
+When creating new social posts, use only actual imagery supplied in this folder or otherwise provided or approved for the project. **Do not create, generate or invent new images unless explicitly requested.**
+
+Use the video work to guide the attitude of the social design: cinematic and immediate, close to the subject, active, human and grounded in real working environments. Carry that energy through the crop, scale, composition, typography and pacing while keeping the source photography intact.
+
 ## Visual direction
 
 Photography should feel candid, immediate and grounded in the reality of running a business.
@@ -54,6 +60,6 @@ For video and motion work, carry the same attitude into the footage: handheld or
 
 ## Using these references
 
-These files define an attitude, not a set of compositions to copy. New photography, licensed stock and generated concepts should match the overall realism, energy, lighting and human specificity without recreating a reference image exactly.
+These files define an attitude, not a set of compositions to copy. Additional supplied or approved photography should match the overall realism, energy, lighting and human specificity without recreating a reference image exactly.
 
-Before production use, confirm the source, licensing and approval status of each image. Record whether an asset is client-supplied, licensed, commissioned, generated or edited from another source.
+Before production use, confirm the source, licensing and approval status of each image. Record whether an asset is client-supplied, licensed, commissioned or edited from another source. Generated imagery should only enter the work when it has been explicitly requested.
